@@ -222,6 +222,7 @@ test('rebuild with pending option', async () => {
     pnpmBin,
     'add',
     'pnpm-e2e/install-scripts-example#b6cfdb8af6f8d5ebc5e7de6831af9d38084d765b',
+    '--config.block-exotic-subdeps=false',
     `--registry=${REGISTRY}`,
     `--store-dir=${storeDir}`,
     `--cache-dir=${cacheDir}`,
